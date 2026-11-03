@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Weather App</h1>
+        <p>Check the weather in your city</p>
+
+        <!-- Search Section -->
+        <form id="search-form">
+            <input
+                type="text"
+                id="city-input"
+                placeholder="Enter city name"
+                required
+            >
+
+            <button type="submit">Search</button>
+        </form>
+
+        <button id="location-btn" type="button">
+            Use My Location
+        </button>
+
+        <!-- Loading Message -->
+        <p id="loading" hidden>Loading weather...</p>
+
+        <!-- Error Message -->
+        <p id="error-message" role="alert"></p>
+
+        <!-- Weather Information -->
+        <div id="weather-card" hidden>
+
+            <h2 id="city-name"></h2>
+
+            <img id="weather-icon" src="" alt="Weather icon">
+
+            <h1 id="temperature"></h1>
+
+            <h3 id="weather-condition"></h3>
+
+            <p id="feels-like"></p>
+
+            <div class="details">
+
+                <div class="detail-box">
+                    <h4>Humidity</h4>
+                    <p id="humidity"></p>
+                </div>
+
+                <div class="detail-box">
+                    <h4>Wind Speed</h4>
+                    <p id="wind-speed"></p>
+                </div>
+
+                <div class="detail-box">
+                    <h4>Pressure</h4>
+                    <p id="pressure"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

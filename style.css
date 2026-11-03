@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.container > p {
+    margin: 10px 0 25px;
+    color: #d4dce8;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #00b4d8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0096c7;
+}
+
+#location-btn {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #4361ee;
+}
+
+#location-btn:hover {
+    background: #304ed0;
+}
+
+#weather-card {
+    margin-top: 15px;
+}
+
+#weather-icon {
+    width: 110px;
+    height: 110px;
+}
+
+#temperature {
+    font-size: 48px;
+    margin: 5px 0;
+}
+
+#weather-condition {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+#feels-like {
+    color: #d4dce8;
+    margin-bottom: 25px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.detail-box {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 15px 5px;
+    border-radius: 10px;
+}
+
+.detail-box h4 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.detail-box p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#error-message {
+    color: #ffb4b4;
+    margin: 10px 0;
+}
+
+#loading {
+    color: #ffffff;
+    margin: 15px 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .details {
+        gap: 6px;
+    }
+
+    .detail-box {
+        padding: 12px 3px;
+    }
+}
